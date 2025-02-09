@@ -60,7 +60,7 @@ void initHead(struct snake_t *head, int x, int y)
     head->direction = RIGHT; //âïðàâî ïîëçåò
 }
 
-//******************///////////
+
 void initSnake(snake_t *head, size_t size, int x, int y)
 {
     tail_t*  tail  = (tail_t*) malloc(MAX_TAIL_SIZE*sizeof(tail_t));
