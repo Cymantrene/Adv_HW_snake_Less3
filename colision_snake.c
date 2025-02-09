@@ -21,15 +21,9 @@ struct control_buttons
 
 struct control_buttons default_controls = {KEY_DOWN, KEY_UP, KEY_LEFT, KEY_RIGHT};
 
-/*
- Голова змейки содержит в себе
- x,y - координаты текущей позиции
- direction - направление движения
- tsize - размер хвоста
- *tail -  ссылка на хвост
- */
 
-//структура головы
+
+
 typedef struct snake_t
 {
     int x;
@@ -63,10 +57,10 @@ void initHead(struct snake_t *head, int x, int y)
 {
     head->x = x;
     head->y = y;
-    head->direction = RIGHT; //вправо ползет
+    head->direction = RIGHT; //ГўГЇГ°Г ГўГ® ГЇГ®Г«Г§ГҐГІ
 }
 
-//инициализация змейки
+//******************///////////
 void initSnake(snake_t *head, size_t size, int x, int y)
 {
     tail_t*  tail  = (tail_t*) malloc(MAX_TAIL_SIZE*sizeof(tail_t));
